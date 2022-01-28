@@ -9,12 +9,12 @@
   display: flex;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -66,6 +66,7 @@
   margin-right: 93px;
 }
 
+
 /* site nav */
 // .site-nav .link {
 //   color: var(--title-text-color);
@@ -85,7 +86,7 @@
 //   text-decoration: none;
 // }
 
-.telephone {
+.auth-nav__telephone {
   margin-left: 50px;
 }
 

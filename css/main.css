@@ -72,12 +72,12 @@ body {
   display: flex;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 /* site nav */
-.telephone {
+.auth-nav__telephone {
   margin-left: 50px;
 }
 
@@ -200,7 +200,7 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.hero-works__title {
   color: var(--primary-white-color);
   letter-spacing: 0.06em;
   font-weight: 900;
@@ -217,23 +217,20 @@ body {
   padding: 94px 0;
 }
 
-.section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  width: 376px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
 .feature-list {
   display: flex;
   list-style: none;
 }
 
-.feature-list .title {
+.feature-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  width: 270px;
+  color: var(--primary-text-color);
+}
+
+.feature-list__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -243,15 +240,7 @@ body {
   text-transform: uppercase;
 }
 
-.feature-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  width: 270px;
-  color: var(--primary-text-color);
-}
-
-.feature-item::before {
+.feature-list__item::before {
   content: '';
   background-color: #f5f4fa;
   height: 120px;
@@ -262,24 +251,24 @@ body {
   margin-bottom: 30px;
 }
 
-.feature-item:not(:last-child) {
+.feature-list__item:not(:last-child) {
   margin-right: var(--base-margin);
   width: 270px;
 }
 
-.feature-item:nth-child(1)::before {
+.feature-list__item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
 }
 
-.feature-item:nth-child(2)::before {
+.feature-list__item:nth-child(2)::before {
   background-image: url(../images/clock.svg);
 }
 
-.feature-item:nth-child(3)::before {
+.feature-list__item:nth-child(3)::before {
   background-image: url(../images/clock.svg);
 }
 
-.feature-item:nth-child(4)::before {
+.feature-list__item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
 }
 
@@ -291,16 +280,16 @@ body {
   display: flex;
 }
 
-.examples-item {
+.examples-list__item {
   position: relative;
   overflow: hidden;
 }
 
-.examples-item:not(:last-child) {
+.examples-list__item:not(:last-child) {
   margin-right: var(--base-margin);
 }
 
-.examples-pictures-text {
+.examples-list__pictures-text {
   position: absolute;
   bottom: 0;
   color: var(--primary-white-color);
@@ -346,12 +335,19 @@ body {
   margin-left: 10px;
 }
 
-.people {
+.leaders-list__people {
   padding-top: 30px;
   padding-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.leaders-list__text {
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
 .section-leaders {
@@ -360,28 +356,15 @@ body {
   background-color: #f5f4fa;
 }
 
-.section-leaders .text {
-  letter-spacing: 0.03em;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-}
-
 .leaders-list {
   display: flex;
 }
 
-.leaders-item:not(:last-child) {
+.leaders-list__item:not(:last-child) {
   margin-right: var(--base-margin);
 }
 
-.section-title.leaders {
-  width: 264px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
-.section-partition {
+.leaders-list__section-partition {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -396,21 +379,9 @@ body {
   padding-top: 94px;
 }
 
-.section-clients-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-  letter-spacing: 0.03em;
-  margin: 0 auto;
-}
-
 .section-clients-list {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .section-clients-item:not(:last-child) {
@@ -926,5 +897,16 @@ body {
   opacity: 0;
   visibility: none;
   pointer-events: none;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */

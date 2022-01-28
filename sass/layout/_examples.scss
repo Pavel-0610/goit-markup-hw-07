@@ -1,3 +1,4 @@
+
 .section-examples {
   padding-bottom: 94px;
 }
@@ -6,7 +7,7 @@
   display: flex;
 }
 
-.examples-item {
+.examples-list__item {
   position: relative;
   overflow: hidden;
   &:not(:last-child) {
@@ -14,7 +15,7 @@
   }
 }
 
-.examples-pictures-text {
+.examples-list__pictures-text {
   position: absolute;
   bottom: 0;
   color: var(--primary-white-color);
@@ -29,3 +30,5 @@
   text-transform: uppercase;
   padding: 27px;
 }
+
+
