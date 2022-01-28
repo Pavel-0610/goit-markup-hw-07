@@ -1,0 +1,119 @@
+.section {
+  padding: 94px 0;
+  &-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    width: 376px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+// .section-title {
+//   color: var(--title-text-color);
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.17;
+//   text-align: center;
+//   width: 376px;
+//   margin: 0 auto;
+//   margin-bottom: 50px;
+// }
+
+.feature-list {
+  display: flex;
+  list-style: none;
+  .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    width: 270px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  width: 270px;
+  color: var(--primary-text-color);
+}
+
+// .feature-list .title {
+//   color: var(--title-text-color);
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   width: 270px;
+//   margin-bottom: 10px;
+//   text-transform: uppercase;
+// }
+
+.feature-item {
+  &::before {
+  content: '';
+  background-color: #f5f4fa;
+  height: 120px;
+  display: block;
+  background-position: center;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+  &:not(:last-child) {
+  margin-right: var(--base-margin);
+  width: 270px;
+}
+  &:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+  &:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+  &:nth-child(3)::before {
+  background-image: url(../images/clock.svg);
+}
+  &:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+}
+
+
+
+// .feature-item:not(:last-child) {
+//   margin-right: var(--base-margin);
+//   width: 270px;
+// }
+
+// .feature-item::before {
+//   content: '';
+//   background-color: #f5f4fa;
+//   height: 120px;
+//   display: block;
+//   background-position: center;
+//   background-size: 70px;
+//   background-repeat: no-repeat;
+//   margin-bottom: 30px;
+// }
+
+// .feature-item:nth-child(1)::before {
+//   background-image: url(../images/antenna.svg);
+// }
+
+// .feature-item:nth-child(2)::before {
+//   background-image: url(../images/clock.svg);
+// }
+
+// .feature-item:nth-child(3)::before {
+//   background-image: url(../images/diagram.svg);
+// }
+
+// .feature-item:nth-child(4)::before {
+//   background-image: url(../images/astronaut.svg);
+// }
