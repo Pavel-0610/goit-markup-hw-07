@@ -2,7 +2,7 @@
   background-color: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
-    .logo {
+  .logo {
     color: var(--primary-white-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -17,7 +17,7 @@
 //   margin-top: 20px;
 // }
 
-.footer-item:not(:last-child) {
+.footer-local__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -34,12 +34,12 @@
   font-style: normal;
   margin-top: 20px;
   .link {
-  color: var(--footer-adress-color);
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none;
-}
+    color: var(--footer-adress-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+  }
 }
 
 .link.actual {
@@ -51,14 +51,12 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .link.mail {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-&:focus {
-  color: var(--primary-white-color);
-}
+  &:focus {
+    color: var(--primary-white-color);
+  }
 }
 
 .actual:hover,
@@ -86,12 +84,12 @@
   justify-content: center;
 }
 
-.footer-works-item {
+.works__item {
   margin-right: 10px;
   margin-top: 20px;
 }
 
-.footer-text {
+.footer-text__title {
   font-weight: 700px;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -100,7 +98,7 @@
   color: var(--primary-white-color);
 }
 
-.footer-works-link {
+.works__link {
   width: 44px;
   height: 44px;
   color: var(--primary-white-color);
@@ -111,11 +109,11 @@
   background: rgba(255, 255, 255, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-&:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
 }
 
 // .footer-works-link:hover,
@@ -124,7 +122,7 @@
 //   color: var(--primary-white-color);
 // }
 
-.footer-social-ikon {
+.works__ikon {
   fill: currentColor;
 }
 
@@ -153,7 +151,7 @@
   display: flex;
   justify-items: center;
   margin-top: 20px;
-    .button-primary {
+  .button-primary {
     display: flex;
     padding-left: 29px;
     align-items: center;
